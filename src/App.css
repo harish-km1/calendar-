@@ -1,0 +1,136 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom right, lightblue, darkblue);
+  color: black;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: darkblue;
+  color: white;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar-button.active {
+  background-color: darkgreen;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: black;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  margin-left: 5px;
+  color: black;
+}
+
+.tab.active {
+  background-color: darkgreen;
+  color: white;
+}
+
+.companies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-company-button {
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.companies-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.companies-table th,
+.companies-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: black;
+}
+
+.companies-table th {
+  background-color: #f2f2f2;
+}
+
+.companies-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.companies-table button {
+  background-color: darkgreen;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+}
+
+.main-content.full-screen-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-screen-message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-size: 24px;
+}
